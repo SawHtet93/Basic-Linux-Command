@@ -1,6 +1,0 @@
-find / -name eg*
-
-locate eg.exe
-
-which EgDir
-
