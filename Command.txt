@@ -38,5 +38,8 @@ rcconf and sysv-rc-conf   (to manage boot system)
  host cisco.com| grep  "has address"|cut -d " " -f4
  
  
+ for url in $(grep -o '[A-Za-z0-9_\.-]*\.*cisco.com' index.html|sort -u); do host $url|grep "has address"|cut -d" " -f4;done
+ 
+ 
 
 
