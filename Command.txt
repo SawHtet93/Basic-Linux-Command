@@ -17,7 +17,9 @@ netstat -antp |grep sshd     #make sure ssh services running
 
 #echo "Hello Lunux" > var\www\index.html change html in command
 
-update-rc.d  services name(eg.ssh) enable #after reboot to run serverces 
+etc/init.d/serivices-name(eg-apache2) start/stop/restart #to start and stop services
+
+update-rc.d  services-name(eg.ssh) enable #after reboot to run serverces 
 
 wget www.eg.com   # download command by http
 
@@ -26,3 +28,15 @@ more eg.html   #more is to get inforomation file
 cat index.html |grep "href="  #extract spacific key word
 
 host www.eg.com   #to get web site informationf
+
+rcconf and sysv-rc-conf   (to manage boot system)
+
+ cat index.html |grep "href=" |cut -d"/" -f3 |grep "cisco\.com"|cut -d'"' -f1 |sort -u
+ 
+ grep -o '[A-Za-z0-9_\.-]*\.*cisco.com' index.html|sort -u -o cisco.com #grep -o mean order by matching , sort -u mean sort by unit
+ 
+ host cisco.com| grep  "has address"|cut -d " " -f4
+ 
+ 
+
+
