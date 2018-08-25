@@ -1,5 +1,6 @@
 updatedb
 
+man #Manual
 
 find / -name eg*   #The!find!command!is!a!more!aggressive!search!tool!than!locate!or!which.!Find!is!able!to! 
                    #recursively!search!any!given!path!for!various!files.! 
